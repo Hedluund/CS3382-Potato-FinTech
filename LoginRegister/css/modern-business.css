@@ -24,6 +24,10 @@ body {
     background-size: cover;
 }
 
+form{
+  display: inline;
+}
+
 .portfolio-item {
     margin-bottom: 30px;
 }
