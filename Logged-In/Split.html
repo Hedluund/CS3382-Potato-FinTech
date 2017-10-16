@@ -31,10 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Pay</a>
+              <a class="nav-link" href="pay.html">Pay</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
+              <a class="nav-link" href="myHistory.html">History</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contacs</a>
@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Split</a>
+              <a class="nav-link" href="#">Split</a>
             </li>
             <div class="nav pull-right">
               <a type="button" class="btn btn-primary navbar-btn" href="../index.html">
@@ -165,28 +165,29 @@
 
 .side {
   width: 30%;
-  height: 375px;
+  height: 300px;
   float: right;
+  background:#fcffe0;
 }
 
 .boxMain {
-  width: 70%;
-  height: 500px;
-  background: white;
+  width: 40%;
+  height: 300px;
+  background: #e0e4ff;
   display: inline-block;
 }
 
 .box1 {
-  width: 100%;
-  background: white;
-  height: 70%;
+  width: 30%;
+  background:#fcffe0;
+  height: 300px;
+  float: left;
 }
 
-.box2 {
- width: 100%;
- background: white;
- height: 40%;
 }
+
+
+
 
 </style>
 
@@ -199,47 +200,62 @@
 </div>
 
 
-  <div class="boxMain">
-    <form>
+  <div class="box1">
+    <div class="container" id=cont1>
+      <h3> Amount </h3>
+      <form>
+   Total Amount To Split (HKD):<br>
+   <input type="number" name="Amount" ><br>
+ </form>
 
-</form>
+    </div>
+
 
   </div>
+
   <div class="side">
 
-  <div class="box1">
+    <div class="container">
+      <h3> Message </h3>
+    <form action="/action_page.php">
+    <textarea name="message" rows="4" cols="30">Type your message here...</textarea>
+    <br>
+    <div class="nav pull-right">
+      <a type="button" class="btn btn-primary navbar-btn" href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        Make new Request now!
+      </a>
+    </div>
+    </form>
+    </div>
+</div>
+
+  <div class="boxMain">
         <div class="container">
+          <h3> Contacs </h3>
     <div  style="overflow-y:scroll; height:200px; background:white">
       <form>
-      <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-        <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-          <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-            <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-              <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                  <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                    <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                      <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                        <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                          <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                            <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
-                              <input type="checkbox" name="vehicle1" value="Bike"> Kalle<br>
+      <input type="checkbox" name="vehicle1" value="Bike">Axel Svensson - 070947373727<br>
+        <input type="checkbox" name="vehicle1" value="Bike"> Bert Calzone 070994549594<br>
+          <input type="checkbox" name="vehicle1" value="Bike"> Gordon Talker -5965969569<br>
+            <input type="checkbox" name="vehicle1" value="Bike"> Adam Smith - 568596859868596<br>
+              <input type="checkbox" name="vehicle1" value="Bike"> Kevin Wong - 564574676764 <br>
+                <input type="checkbox" name="vehicle1" value="Bike"> Jesper Hedlund - 070356564<br>
+                  <input type="checkbox" name="vehicle1" value="Bike"> Yuo Won On Sjo - 5764567465<br>
+                    <input type="checkbox" name="vehicle1" value="Bike"> Kevin Second - 54654645656<br>
+                      <input type="checkbox" name="vehicle1" value="Bike"> Bishop Brask - 454604069049<br>
+                        <input type="checkbox" name="vehicle1" value="Bike"> Bill Gates - 88888888888<br>
+                          <input type="checkbox" name="vehicle1" value="Bike"> Yzz Zyyyy - 576474676<br>
+                            <input type="checkbox" name="vehicle1" value="Bike"> Nga Nga Ha - 8439696459<br>
+                              <input type="checkbox" name="vehicle1" value="Bike"> Gustaf Sagent<br>
     </form>
 
    </div>
-   </div>
 
 
+
   </div>
-  <div class="box2">
-    <div class="container">
-  <form action="/action_page.php">
-  <textarea name="message" rows="4" cols="30">Type your message here...</textarea>
-  <br>
-  <input type="submit">
-</form>
-  </div>
-  </div>
+
   </div>
 
   </div>
