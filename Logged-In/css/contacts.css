@@ -85,7 +85,7 @@
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 2;
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
@@ -141,6 +141,40 @@
 
 label {
   text-decoration: underline;
+}
+
+/*modal fpr confirmationbox*/
+
+#modal-content-Confirmation {
+  width: 50%;
+}
+
+.modal-footer-comfirmation {
+  color: white;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+#checkMark {
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+  color: green;
+  padding: 20px 20px;
+}
+
+.modal-footer-comfirmation {
+  border-top: 1px solid lightgrey;
+}
+
+#okButton {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Add Animation */

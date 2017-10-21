@@ -82,7 +82,7 @@
         </a>
 
         <div class="contacts-wrapper" id="contacts-wrapper">
-          <a href="https://www.facebook.com/gustaf.sagent?ref=br_rs" class="list-group-item">
+          <a href="#" data-toggle="modal" data-target="#myModalConfirmation" class="list-group-item">
             Gustaf Sagent<p class="number-class">123124</p></a>
           <a href="#" class="list-group-item">Johan Ormsjo<p class="number-class">#123124</p></a>
           <a href="#" class="list-group-item">Important Person<p class="number-class">123124</p></a>
@@ -138,6 +138,34 @@
       </div>
 
     </div>
+
+    <!-- modal comfirmation -->
+
+    <div id="myModalConfirmation" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content" id="modal-content-Confirmation">
+        <div class="modal-header">
+          <h2>Contact added succesfully</h2>
+          <span class="closeC">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="Confirm-box">
+            <p id="checkMark">&#10004;</p>
+          </div>
+
+        </div>
+        <div class="modal-footer-comfirmation">
+          <div style="text-align:center;">
+            <button id="okButton">OK</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
     <script>
       // Get the modal
       var modal = document.getElementById('myModal');
@@ -150,14 +178,19 @@
 
       var span2 = document.getElementById('mySubmitBtn');
 
+      var okBtn = document.getElementById('okButton');
+
       var inputName = document.getElementsByName('Name')[0];
 
       var inputNumber = document.getElementsByName('Number')[0];
+
+      var modalC = document.getElementById("myModalConfirmation");
 
       // When the user clicks the button, open the modal
       btn.onclick = function() {
         modal.style.display = "block";
       }
+
 
       // When the user clicks on <span> (x), close the modal
       span.onclick = function() {
@@ -174,13 +207,23 @@
         inputNumber.value = '';
         document.getElementsByName('Name')[0].placeholder = "Name of contact..";
         document.getElementsByName('Number')[0].placeholder = "Insert phone number..";
-
+        modalC.style.display = "block";
       }
+      okBtn.onclick = function() {
+        modalC.style.display = "none";
+      }
+
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
+        }
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modalC) {
+          modalC.style.display = "none";
         }
       }
     </script>
