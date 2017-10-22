@@ -186,6 +186,7 @@
 
       var modalC = document.getElementById("myModalConfirmation");
 
+      var spanC = document.getElementsByClassName("closeC")[0];
       // When the user clicks the button, open the modal
       btn.onclick = function() {
         modal.style.display = "block";
@@ -211,6 +212,11 @@
       }
       okBtn.onclick = function() {
         modalC.style.display = "none";
+      }
+
+      spanC.onclick = function() {
+        modalC.style.display = "none";
+
       }
 
 
