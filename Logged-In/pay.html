@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pay - Potato Fintech</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/contacts.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="myProfile.html">Potato FinTech</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="pay.html">Pay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myHistory.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="myProfile.html">My profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Split.html">Split</a>
+            </li>
+            <div class="nav pull-right">
+              <a type="button" class="btn btn-primary navbar-btn" href="../index.html">
+                <span class="glyphicon glyphicon-plus"></span>
+                Log out
+              </a>
+            </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <style>
+      .number-class {
+
+        width: 40%;
+        border-left: 1px solid grey;
+        float: right;
+        padding-right: 100px;
+        margin-top: 0px;
+        margin-bottom: -20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        text-decoration: underline;
+        color: grey;
+      }
+
+      .number-class2 {
+
+        width: 40%;
+        border-left: 1px solid grey;
+        float: right;
+        padding-right: 100px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        text-decoration: underline;
+        color: grey;
+
+      }
+      #myBtn {
+      width: 30%;
+  }
+      </style>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Pay
+        <small>-Enter phonenumer or choose from contacts below</small>
+      </h1>
+
+      <input type="text" placeholder="Number" required>
+            <div class="bar">
+                <i></i>
+
+
+
+
+                    <div class="list-groups" id="whole-contactbox">
+                      <div class="list-group" id="contact-headAndInfo">
+                        <a href="#" class="list-group-item active">
+                          Contacts
+
+                        </a>
+
+                        <div class="contacts-wrapper" id="contacts-wrapper">
+                          <a href="#" data-toggle="modal" data-target="#myModalConfirmation" class="list-group-item">
+
+                          <div class = "container">
+
+                            <input type="text" placeholder="Search">
+
+                          </div>
+
+
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Axel Svensson - 070947373727<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Bert Calzone - 07095675673727<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Gordon Talker - 0709457345245<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Adam Smith - 03494353735737<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Kevin Wong - 07454735757577<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Jesper Hedlund - 070454479627<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Yuo Won On Sjo - 074536437247<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Kevin Second - 03494732768599<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Bishop Brask - 07034735588827<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Yzz Zyyyyy - 07068979433727<br> </form></a>
+                            <a class="list-group-item">  <form><input type="checkbox" name="vehicle1" value="Bike">Nga Nga Ha - 070949865627<br> </form></a>
+
+
+
+
+                          </div>
+                        </div>
+                        <div style="text-align:center;">
+                          <button id="myBtn">Pay</button>
+                        </div>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2>Pay</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-contact-form">
+                            <form action="/action_page.php">
+
+                              <div class="input-modal">
+                                  <label for="paym">Payment to Jesper Wong</label>
+                              </div>
+                              <div class="input-modal">
+
+                                <label for="fname">Amount:</label>
+                                <input type="text" id="fname" name="Name" placeholder="(HKD)">
+                              </div>
+                              <div class="input-modal">
+                                <label for="lname">Message:</label>
+                                <input type="text" id="lname" name="Number" placeholder="Add a short message">
+                              </div>
+                              <!-- <input type="submit" value="Submit" > -->
+
+                            </form>
+                          </div>
+
+                        </div>
+                        <div class="modal-footer">
+                          <div style="text-align:center;">
+                            <button id="mySubmitBtn">Confirm</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- modal comfirmation -->
+
+                    <div id="myModalConfirmation" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content" id="modal-content-Confirmation">
+                        <div class="modal-header">
+                          <h2>Enter password</h2>
+                          <span class="closeC">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <div class="Confirm-box">
+
+
+                          </div>
+
+                              <label for="pin">PIN:</label>
+                              <input id="userPassword" type="password" required>
+
+
+                        </div>
+                        <div class="modal-footer-comfirmation">
+                          <div style="text-align:center;">
+                            <button id="okButton">OK</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div id="myModalConfirmation2" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content" id="modal-content-Confirmation">
+                        <div class="modal-header">
+                          <h2>Payment confirmed</h2>
+                          <span class="closeC">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <div class="Confirm-box">
+                            <label for="paymok">Transfared 50HKD to Jesper Wong</label>
+
+                            <p id="checkMark">&#10004;</p>
+                          </div>
+
+                        </div>
+                        <div class="modal-footer-comfirmation">
+                          <div style="text-align:center;">
+
+
+                            <button id="okButton2">OK</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                    <script>
+                      // Get the modal
+                      var modal = document.getElementById('myModal');
+
+                      // Get the button that opens the modal
+                      var btn = document.getElementById("myBtn");
+
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+
+                      var span2 = document.getElementById('mySubmitBtn');
+
+                      var okBtn = document.getElementById('okButton');
+
+                      var okBtn2 = document.getElementById('okButton2');
+
+                      var inputName = document.getElementsByName('Name')[0];
+
+                      var inputNumber = document.getElementsByName('Number')[0];
+
+                      var modalC = document.getElementById("myModalConfirmation");
+
+                      var modalC2 = document.getElementById("myModalConfirmation2");
+
+                      // When the user clicks the button, open the modal
+                      btn.onclick = function() {
+                        modal.style.display = "block";
+                      }
+
+
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() {
+                        modal.style.display = "none";
+                        inputName.value = '';
+                        inputNumber.value = '';
+                        document.getElementsByName('Name')[0].placeholder = "Name of contact..";
+                        document.getElementsByName('Number')[0].placeholder = "Insert phone number..";
+
+                      }
+                      span2.onclick = function() {
+                        modal.style.display = "none";
+                        inputName.value = '';
+                        inputNumber.value = '';
+                        document.getElementsByName('Name')[0].placeholder = "Name of contact..";
+                        document.getElementsByName('Number')[0].placeholder = "Insert phone number..";
+                        modalC.style.display = "block";
+                      }
+                      okBtn.onclick = function() {
+                        modalC.style.display = "none";
+                        modalC2.style.display = "block";
+
+
+                      }
+                      okBtn2.onclick = function() {
+                        modalC2.style.display = "none";
+
+                      }
+
+
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      }
+
+                      window.onclick = function(event) {
+                        if (event.target == modalC) {
+                          modalC.style.display = "none";
+                        }
+                      }
+                    </script>
+
+
+                    <!-- Footer -->
+                    <footer class="py-5 bg-dark">
+                      <div class="container">
+                        <p class="m-0 text-center text-white">Copyright &copy; Potato Fintech - This is not a real website. It is a part of a university course in Web usability.</p>
+                      </div>
+                      <!-- /.container -->
+                    </footer>
+
+                    <!-- Bootstrap core JavaScript -->
+                    <script src="vendor/jquery/jquery.min.js"></script>
+                    <script src="vendor/popper/popper.min.js"></script>
+                    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+                    <!-- Contact form JavaScript -->
+                    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+                    <script src="js/jqBootstrapValidation.js"></script>
+                    <script src="js/contact_me.js"></script>
+
+
+                </body>
+
+                </html>
