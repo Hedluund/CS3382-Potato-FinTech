@@ -1,0 +1,21 @@
+#number-input {
+  margin-top: 10px;
+  margin bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#tele-icon {
+  font-size: 35px;
+  margin-bottom: -6px;
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: green;
+}
+
+#contact-pic {
+  margin-left: -25px;
+  margin-top: -10px;
+  margin-bottom: -5px
+}
