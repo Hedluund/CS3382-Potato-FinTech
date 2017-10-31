@@ -255,7 +255,7 @@
         <div class="modal-content" id="modal-content-Confirmation">
           <div class="modal-header">
             <h2>Payment confirmed</h2>
-            <span class="closeC">&times;</span>
+            <span class="closeC" id="closePayTrans">&times;</span>
           </div>
           <div class="modal-body">
             <div class="Confirm-box">
@@ -289,6 +289,8 @@
         var span = document.getElementsByClassName("close")[0];
 
         var span2 = document.getElementById('mySubmitBtn');
+
+        var span3 = document.getElementById('closePayTrans');
 
         var okBtn = document.getElementById('okButton');
 
@@ -333,7 +335,9 @@
         }
         okBtn2.onclick = function() {
           modalC2.style.display = "none";
-
+        }
+        span3.onclick = function() {
+          modalC2.style.display = "none";
         }
 
 

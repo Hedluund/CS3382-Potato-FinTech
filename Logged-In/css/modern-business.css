@@ -52,6 +52,10 @@ body {
   text-decoration: underline;
 }
 
+.navbar-brand:hover {
+  color: #fec136 !important;
+}
+
 .nav-link:hover {
   color: #fed136 !important;
   text-decoration: underline;
