@@ -19,3 +19,18 @@
   margin-top: -10px;
   margin-bottom: -5px
 }
+
+.contact-searcher:hover {
+  background-color: white;
+}
+
+#whole-contactbox {
+  width: 60%;
+  min-width: 475px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+  margin-left: -5Px;
+  margin-right: 10px;
+}
