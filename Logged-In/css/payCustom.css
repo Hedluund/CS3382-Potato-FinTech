@@ -34,3 +34,25 @@ input[type=checkbox] {
   margin-left: -5Px;
   margin-right: 10px;
 }
+
+#myPayBtn {
+  width: 200px;
+  border-radius: 7px;
+  background: #ffce6c;
+  text-decoration: center;
+  border: none;
+  color: #180e68;
+  margin-top: 0px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  outline: none;
+  font-size: 13px;
+  border-bottom: 3px solid #180e68;
+  cursor: pointer;
+  padding-right: 0px;
+}
+
+.py-5 {
+  margin-left: -45px;
+  margin-right: -45px;
+}

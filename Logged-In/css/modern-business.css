@@ -60,3 +60,27 @@ body {
   color: #fed136 !important;
   text-decoration: underline;
 }
+
+.myFooter {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #180072;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  height: 70px;
+}
+
+.myFooterOverflow {
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #180072;
+  position: relative;
+}
