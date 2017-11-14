@@ -1,3 +1,5 @@
-.lastCard {
-  margin-bottom: 232px;
+@media (max-width: 1400px) {
+  .lastCard {
+    margin-bottom: 232px;
+  }
 }

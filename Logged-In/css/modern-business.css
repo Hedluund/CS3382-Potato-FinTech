@@ -84,3 +84,9 @@ body {
   background-color: #180072;
   position: relative;
 }
+
+@media (min-width: 1400px) {
+  .myFooter {
+    position: absolute;
+  }
+}
